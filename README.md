@@ -6,7 +6,7 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-Dattings
+Dattings.
 
 ![Tux, the Linux mascot](/demo_images/dt_!.png)
 ![Tux, the Linux mascot](/demo_images/dt_2.png)
@@ -15,12 +15,16 @@ Dattings
 ![Tux, the Linux mascot](/demo_images/dt_5.png)
 ![Tux, the Linux mascot](/demo_images/dt_6.png)
 
-Test demo fb firebase
+
+Test demo fb firebase.
+
 ![Tux, the Linux mascot](/demo_images/fb_1.png)
 ![Tux, the Linux mascot](/demo_images/fb_2.png)
 ![Tux, the Linux mascot](/demo_images/fb_3.png)
 
-Instagram
+
+Instagram.
+
 ![Tux, the Linux mascot](/demo_images/ig_1.png)
 ![Tux, the Linux mascot](/demo_images/ig_2.png)
 ![Tux, the Linux mascot](/demo_images/ig_3.png)
