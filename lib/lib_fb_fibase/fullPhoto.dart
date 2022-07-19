@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+import 'package:photo_view/photo_view.dart';
+import 'package:photo_view/photo_view_gallery.dart';
+
+class FullPhoto extends StatefulWidget {
+  final String imageUrl;
+  const FullPhoto({
+    Key? key,
+    required this.imageUrl,
+  }) : super(key: key);
+  @override
+  State createState() => _FullPhoto();
+}
+
+class _FullPhoto extends State<FullPhoto> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: GestureDetector(
+        child: Container(
+            decoration: const BoxDecoration(
+              color: Colors.black,
+            ),
+            child: Stack(
+              alignment: Alignment.bottomRight,
+              children: <Widget>[
+                PhotoViewGallery.builder(
+                  scrollPhysics: const BouncingScrollPhysics(),
+                  builder: (BuildContext context, int index) {
+                    return PhotoViewGalleryPageOptions(
+                      imageProvider: NetworkImage(widget.imageUrl),
+                      initialScale: PhotoViewComputedScale.contained,
+                      minScale: PhotoViewComputedScale.contained,
+                      maxScale: PhotoViewComputedScale.covered * 1.5,
+                    );
+                  },
+                  itemCount: 1,
+                  loadingBuilder: (context, event) => Center(
+                    child: SizedBox(
+                      width: 20.0,
+                      height: 20.0,
+                      child: CircularProgressIndicator(
+                        value: event == null
+                            ? 0
+                            : event.cumulativeBytesLoaded /
+                                event.expectedTotalBytes!,
+                      ),
+                    ),
+                  ),
+                  backgroundDecoration: const BoxDecoration(
+                    color: Colors.black,
+                  ),
+                ),
+              ],
+            )),
+        onTap: () => Navigator.of(context).pop(),
+      ),
+    );
+  }
+}

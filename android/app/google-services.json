@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "365993608054",
+    "project_id": "dattings-hortgirl",
+    "storage_bucket": "dattings-hortgirl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365993608054:android:208e28379e79f7c75d7057",
+        "android_client_info": {
+          "package_name": "com.example.dattings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365993608054-v90dqcua8rd338vf4cuqd3qkvhl569n6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dattings",
+            "certificate_hash": "b10e2b5f01de2392168b28dee383fcb64577177d"
+          }
+        },
+        {
+          "client_id": "365993608054-ldv144gi78a51qmrfeut6a8tq6oqhrib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGDIvEVsfxssYzUDZdnqXe87XH2qMRCj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365993608054-ldv144gi78a51qmrfeut6a8tq6oqhrib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
